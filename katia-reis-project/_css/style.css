@@ -44,6 +44,7 @@ a {
 
 .post_content {
     margin: 0;
+    text-align: justify;
 }
 
 .post_image {
@@ -54,10 +55,10 @@ a {
 .contact_list {
     list-style-type: none;
     margin: 0;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .contact_list li a {
     color: blue;
-    text-decoration: none;
+    text-decoration: none; /* Altera a formatação da lista para nenhum marcador */
 }
