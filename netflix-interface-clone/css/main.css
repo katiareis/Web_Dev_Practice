@@ -1,0 +1,54 @@
+/*Definindo variáveis dentro da raiz do documento */
+:root{
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+
+/*Reset de qualquer style inerente do html */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* faz com que o conteúdo não ultrapasse a borda do container */
+    text-decoration: none;
+    font-size: 14px;
+}
+ /* Formatação dos elementos Base */
+body {
+    background: var(--preta); /* Cor utilizando a variável no root */
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex; /* Flexbox */
+    flex-direction: row; /* (Alinhamento em linha) Mesmo não declarado, é padrão  */
+    align-items: center; /* Centraliza os elementos na linha */
+    justify-content: space-between;    
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* Filme Principal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.30)100%), url('/netflix-interface-clone/img/capa-house.jpg');
+    height: 700px;
+    background-size: cover;
+}
