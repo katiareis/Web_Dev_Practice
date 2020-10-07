@@ -15,10 +15,11 @@
  /* Formatação dos elementos Base */
 body {
     background: var(--preta); /* Cor utilizando a variável no root */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
+/* Wrapper */
 header .container{
     display: flex; /* Flexbox */
     flex-direction: row; /* (Alinhamento em linha) Mesmo não declarado, é padrão  */
@@ -48,7 +49,67 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.30)100%), url('/netflix-interface-clone/img/capa-house.jpg');
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.30)100%), url('/netflix-interface-clone/img/capa-house.jpg');    
+    
     height: 700px;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Estilo para o botão */
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* Indica que é um botão ao usuário */
+    transition: .3s ease all; /* Dá um delay na animação de hover */
+}
+
+/* Animação para o botão */
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Estilo para o botão */
+.botao i{
+    margin-right: 8px;
+}
+
+/* Wrapper */
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
 }

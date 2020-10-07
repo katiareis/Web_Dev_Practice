@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Link Arquivos Carousel Owl-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
     <title>NETFLIX CLONE</title>
 </head>
 <body>
@@ -23,10 +31,61 @@
     <main>
         <div class="filme-principal">
             <div class="container">
-                <h3 class="título">HOUSE OF CARDS</h3>
-                <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro. Assista agora a nova temporada que está imperdível.
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao"> <!-- Para garantir que o botão redenrize corretamente, foi inserido a propriedade role, que marca a função do botão -->
+                        <i class="fas fa-play"></i> <!-- Ícones de play e info (referenciados pelo site fontawesome.com)-->
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
             </div>
         </div>
-    </main>
+    </main>~
+
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="img/mini1.jpg" alt="The Umbrella Academy" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini2.jpg" alt="Star Wars" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini3.jpg" alt="Pokemon" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini4.jpg" alt="Guerra Civil" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini5.jpg" alt="O Hobbit" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini6.jpg" alt="Breaking Bad" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini7.jpg" alt="House" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini8.jpg" alt="Supernatural" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini9.jpg" alt="Small Ville" srcset="">
+            </div><div class="item">
+                <img class="box-filmes" src="img/mini10.jpg" alt="The Avengers - Guerra Infinita" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d296856137.js" crossorigin="anonymous"></script>
+
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
