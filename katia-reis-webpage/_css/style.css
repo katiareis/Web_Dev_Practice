@@ -62,3 +62,9 @@ a {
     color: blue;
     text-decoration: none; /* Altera a formatação da lista para nenhum marcador */
 }
+
+.rodape{
+    background-color: gray;
+    margin-top: 20px;
+    padding: 10px;
+}
