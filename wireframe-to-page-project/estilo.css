@@ -1,12 +1,13 @@
 /*
  * CSS Base
+ Aprendendo elementos base do CSS.
  */
 
 /* Seleciona o corpo da página */
 body {
 
     /** Muda a cor do fundo da página **/
-    background-color: #e6e6e6;
+    background-color: #ffe18c;
 
     /** Muda a fonte do corpo da página e de todos os elementos
     em seu interior para Candara, Helvetica (se Candara não
@@ -32,7 +33,7 @@ Em nossa página, vai selecionar a div de cabeçalho **/
 #header {
 
     /** Define a largura da div para que ocupe todo o espaço
-    disponível do pai. No nosso caso, o pai é o corpo da página.
+    disponível do elemento aninhado acima. No nosso caso, o elemento é o corpo da página.
     Portanto, a div de cabeçalho ficará com a mesma largura
     da página **/
     width: 100%;
@@ -53,7 +54,7 @@ e texto do logo do site) **/
 #logo {
     /** Definimos uma largura capaz de armazenar a imagem e o texto
     do logo do site. Neste caso, 340px **/
-    width: 340px;
+    width: 425px;
 
     /** Definimos uma altura capaz de armazenar a imagem e o texto
     do logo do site. Neste caso, 100px **/    
@@ -70,10 +71,10 @@ e texto do logo do site) **/
     logo **/
     position: relative;
 
-    /** Desejamos posicionar o logo no meio do pai (da div que ocupa
+    /** Desejamos posicionar o logo no meio do elemento aninhado acima (da div que ocupa
     todo o espaço horizontal do corpo da página. Para tanto, podemos
     definir o posicionamento partindo da esquerda para a metade do
-    tamano do pai (50%) **/
+    tamano do elemento (50%) **/
     left: 50%;
 
     /** Como o posicionamento left considera o início do elemento
@@ -86,7 +87,7 @@ e texto do logo do site) **/
     definimos a margem do elemento para -170px. Esta técnica pode ser
     utilizada sempre que for necessário posicionar elementos no meio
     da página **/
-    margin-left: -170px;
+    margin-left: -212px;
 }
 
 /** Seleciona o elemento com o id "logoImg". No nosso caso, a imagem
@@ -95,7 +96,7 @@ que representa o logo do site**/
 
     /** O comando float faz com que elementos que normalmente
     quebrariam linhas "flutuem" a esquerda ou a direita, nos
-    cantos do elemento pai onde se encontram. É possível flutuar
+    cantos do elemento aninhado acima, onde se encontram. É possível flutuar
     mais de um elemento, de forma que estes fiquem um ao lado do
     outro. Estamos aplicando a fluação na imagem e no texto do
     logo, de forma que fiquem um ao lado do outro **/
@@ -106,14 +107,14 @@ que representa o logo do site**/
     
     /** O comando float faz com que elementos que normalmente
     quebrariam linhas "flutuem" a esquerda ou a direita, nos
-    cantos do elemento pai onde se encontram. É possível flutuar
+    cantos do elemento aninhado acima, onde se encontram. É possível flutuar
     mais de um elemento, de forma que estes fiquem um ao lado do
     outro. Estamos aplicando a fluação  no texto de forma que o
     mesmo fique ao lado da imagem **/
     float: left;
 
     /** Muda a cor do texto do logo **/
-    color: #4b4b4b;
+    color: #e50021;
 
     /** Por padrão, usamos o elemento vertical-align: middle
     para deixar elementos centralizados verticalmente. No entanto
@@ -141,13 +142,13 @@ que representa o logo do site**/
 #menu {
 
     /** Define a largura da div para que ocupe todo o espaço
-    disponível do pai. No nosso caso, o pai é a div de header.
+    disponível do elemento aninhado acima. No nosso caso, o elemento é a div de header.
     Portanto, a div de cabeçalho ficará com a mesma largura
     da div de cabeçalho, que, atualmente, tem o tamanho página **/
     width: 100%;
 
     /** Muda a cor do fundo da página **/
-    background-color: #4b4b4b;
+    background-color: #e50021;
 }
 
 /** Seleciona a lista ordenada que compõe o menu **/
@@ -155,7 +156,7 @@ que representa o logo do site**/
     
     /** Definimos uma largura capaz de armazenar os itens de menu.
     Neste caso, 340px **/
-    width: 300px;
+    width: 350px;
 
     /** Novamente, queremos posicionar a div na página, utilizando
     elementos de posicionamento como left e top. Para que os mesmos
@@ -163,13 +164,13 @@ que representa o logo do site**/
     posicionamento como um valor diferente do padrão (static).
     Utilizamos aqui o relative, já que o mesmo vai manter o espaço
     reservado para os elementos do menu. Se usássemos o absolute,
-    perderiamos o espaço e o elemento pai iria desaparecer, perdendo
+    perderiamos o espaço e o elemento aninhado acima iria desaparecer, perdendo
     a cor de fundo que atravessa a página horizontalmente  **/
     position: relative;
 
     /** Novamente, vamos centralizar o elemento horizontalmente.
     Para tanto, podemos definir seu posicionamento partindo da
-    esquerda para a metade do tamano do pai (50%) **/
+    esquerda para a metade do tamano do elemento aninhado acima em (50%) **/
     left: 50%;
 
     /** Novamente, vamos corrigir o posicionamento não considerar o meio
@@ -179,7 +180,7 @@ que representa o logo do site**/
     corretamente posicionado ao meio. Estamos utilizando um valor maior
     que a metade do tamanho para compensar a margem que separa  os
     elementos entre si **/
-    margin-left: -212px;
+    margin-left: -205px;
 
     /** Definimos uma margem superior ao elemento, de forma que o
     mesmo fique mais afastado do topo e, ao mesmo tempo,
@@ -248,7 +249,7 @@ já visitados **/
 .listaMenu li a:hover {
 
     /** Muda a cor do link  **/
-    color: #4b4b4b;
+    color: #e50021;
 
     /** Muda a cor de fundo para branco **/
     background-color: white;
@@ -319,7 +320,7 @@ principal do site **/
     /** Utilizado para definição de sombra com CSS. O primeiro parâmetro é
     o deslocamento horizontal da sombra, o segundo o vertical, o terceiro
     a quantidade de blur a aplicar na sombra e o quarto a cor da mesma **/
-    text-shadow: 2px 2px 4px #4b4b4b;
+    text-shadow: 2px 2px 4px #e50021;
 }
 
 /** Seleciona o header de valor da promoção (id "promocaoValor") **/
@@ -340,7 +341,7 @@ principal do site **/
     /** Utilizado para definição de sombra com CSS. O primeiro parâmetro é
     o deslocamento horizontal da sombra, o segundo o vertical, o terceiro
     a quantidade de blur a aplicar na sombra e o quarto a cor da mesma **/
-    text-shadow: 2px 2px 4px #4b4b4b;
+    text-shadow: 2px 2px 4px #e50021;
 
     /** Posiciona o elemento no canto inferior direito **/
     left: 180px;
@@ -353,7 +354,7 @@ principal do site **/
 
 #tituloConteudo {
     /** Define a cor do texto **/
-    color: #4b4b4b;
+    color: #e50021;
         
     /** Alinha o texto do título no centro **/
     text-align: center;
@@ -384,7 +385,7 @@ principal do site **/
     width: 250px;
     
     /** Configura uma cor padrão para o texto das células **/
-    color: #4b4b4b;
+    color: #e50021;
 
     /** Configura um tamanho de fonte padrão para o texto das células **/
     font-size: 20px;
@@ -409,7 +410,7 @@ principal do site **/
     /** Permite especifiar a borda do elemento. O primeiro parâmetro é a
     espessura da borda, o segundo é o tipo da borda (solida, pontilhada, etc)
     e o terceiro, sua cor **/
-    border: 2px solid #4b4b4b;
+    border: 2px solid #e50021;
 }
 
 /** Seleciona elementos anotados com a classe "tituloProduto" **/
@@ -454,7 +455,7 @@ principal do site **/
     border-radius: 50%;
 
     /** Define uma borda para o elemento **/
-    border: 3px solid #4b4b4b;
+    border: 3px solid #e50021;
 }
 
 /** Seleciona elementos com id "tel" **/
@@ -471,7 +472,7 @@ principal do site **/
     height: 75px;
 
     /** Define a cor de fundo do item **/
-    background-color: #4b4b4b;
+    background-color: #e50021;
 
     /** Define a cor do texto para branco **/    
     color: white;
