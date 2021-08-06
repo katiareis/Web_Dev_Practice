@@ -1,0 +1,70 @@
+body {
+    background-color: #f7f7f7;
+    font-family: Verdana;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Altera a formatação da foto principal */
+.face_photo {
+    border: 1px solid #505050;
+    border-radius: 50%;
+}
+
+/* Altera a formatação dos títulos */
+#title, .subtitle, .post_title {
+    color: #505050;
+}
+
+/* Altera a formatação do título principal */
+#title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+/* Altera a formatação dos links */
+a {
+    text-decoration: underline;
+    color: #505050;
+}
+
+.sobre {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post_content {
+    margin: 0;
+    text-align: justify;
+}
+
+.post_image {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact_list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.contact_list li a {
+    color: blue;
+    text-decoration: none; /* Altera a formatação da lista para nenhum marcador */
+}
+
+.rodape{
+    background-color: gray;
+    margin-top: 20px;
+    padding: 10px;
+}
