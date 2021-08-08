@@ -11,38 +11,41 @@
     <header>
         <nav class="top_nav">
             <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Projetos</li>
-                <li>Blog</li>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
         </nav>
     </header>
         <main>            
-            <div class="container">
+            <div class="container_intro">
+                <div class="blue_background"></div>
                 <div class="intro_section">
-                    <h1 id="title"><span class="hello_world">Olá, Mundo!</span>eu sou <span class="name">Kátia Reis</span></h1>
-                    <p>Desenvolvedora Front-end e aspirante a Full Stack.   
-                    Estudante de Eng. da Computação na Univesp. Web Dev Girl - Conhecimentos intermediário em HTML, CSS, Javascript e Python.
-                    </p>
-                </div>
-                <div class="photo_section">
-                    <img src="../img/katia-reis-grasses.jpeg" alt="Foto do rosto de Kátia Reis" width="300">  
-                </div>                     
+                    <div class="intro_text">
+                        <h1 id="title"><span class="hello_world">Olá, Mundo!</span> Eu sou <span class="name">Kátia Reis</span></h1>
+                        <p>Sou Desenvolvedora Front-end e aspirante a Full Stack.   
+                        </p>
+                        <p>Estudante de Eng. da Computação na Univesp. <br>Web Dev Girl entusiasta em JavaScript. Possuo conhecimento intermediário em <strong>HTML, CSS, Javascript e Python.</strong></p>
+                    </div>
+                    <div class="photo">
+                        <img src="../img/katia-reis-glasses.jpeg" alt="Foto do rosto de Kátia Reis" width="525">  
+                    </div> 
+                </div>                                    
             </div>
             <div>
                 <blockquote>“ Code is like humor. When you have to explain it, it’s bad.” – Cory House</blockquote>
             </div>
-        </header>
+
         <section>
-            <header>
-                <h2 class="subtitle">Posts</h2> <!-- Boas práticas-Usar h2 como título de seção -->
+            
+                <h2 class="subtitle">Posts</h2>
                 <img src="../img/html-code-image.jpg" alt="Imagem de Editor de texto contendo código HTML" class="post_image">
             
             <article class="post">
-                <header>
-                    <h3 class="post_title">Resumo</h3><br> <!-- Boas práticas-Usar h3 como título de artigos -->
-                </header>
+                
+                    <h3 class="post_title">Resumo</h3><br>
+                
                 <p class="sobre"> 
                     <span>Sobre mim</span>
                     Profissional em transição de carreira para Desenvolvimento Web Front-end.
